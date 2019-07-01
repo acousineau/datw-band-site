@@ -107,13 +107,21 @@
     }
   }
 
+  .show-location {
+    @include breakpoint-max(bp(medium)) {
+      margin-bottom: 10px;
+    }
+  }
+
   .show-actions {
     text-align: right;
-
+    
     @include breakpoint-max(bp(medium)) {
-      position: absolute;
-      top: 14px;
-      right: 14px;
+      display: flex;
+
+      a {
+        width: 100%;
+      }
     }
 
     .tickets {
