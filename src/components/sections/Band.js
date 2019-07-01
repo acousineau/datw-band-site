@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Background from '../../images/bg-band.jpg'
+import MobileBackground from '../../images/bg-band-mobile.jpg'
 
 import './Band.scss'
 
@@ -13,6 +14,12 @@ const Band = props => {
           backgroundImage: `url(${Background})`,
         }}
       >
+        <div
+          className="mobile-image"
+          style={{
+            backgroundImage: `url(${MobileBackground})`,
+          }}
+        />
         <div className="band-container">
           <h1>About the Band</h1>
           <p>

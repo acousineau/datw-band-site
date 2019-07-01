@@ -30,11 +30,21 @@
     padding: 0 20px;
     display: table;
     width: 100%;
+
+    @include breakpoint-max(bp(medium)) {
+      position: relative;
+      display: block;
+    }
   }
 
   .show-row {
     padding: 14px 0px;
     display: table-row;
+
+    @include breakpoint-max(bp(medium)) {
+      display: block;
+      border-bottom: 1px solid rgba(#fff, 0.35);
+    }
 
     &.last-child {
       & .show-date,
@@ -42,6 +52,10 @@
       & .show-venue,
       & .show-location,
       & .show-actions {
+        border-bottom: none;
+      }
+
+      @include breakpoint-max(bp(medium)) {
         border-bottom: none;
       }
     }
@@ -56,6 +70,26 @@
     font-weight: bold;
     padding: 14px 0;
     border-bottom: 1px solid rgba(#fff, 0.35);
+
+    @include breakpoint-max(bp(medium)) {
+      display: block;
+      padding: 0;
+      border: none;
+    }
+  }
+
+  .show-venue {
+    @include breakpoint-max(bp(medium)) {
+      padding-bottom: 5px;
+    }
+  }
+
+  .show-date,
+  .show-day {
+    @include breakpoint-max(bp(medium)) {
+      display: inline-block;
+      padding-bottom: 14px;
+    }
   }
 
   .show-date {
@@ -68,6 +102,12 @@
 
   .show-actions {
     text-align: right;
+
+    @include breakpoint-max(bp(medium)) {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+    }
 
     .tickets {
       margin-right: 10px;
