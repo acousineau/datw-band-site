@@ -16,6 +16,10 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
+
+    @include breakpoint-max(bp(medium)) {
+      width: 95%;
+    }
   }
 
   .news-item {
@@ -55,6 +59,8 @@
     @include breakpoint-max(bp(medium)) {
       padding: 0;
       margin: 0;
+      width: 100%;
+      max-width: 9000px;
     }
   }
 }

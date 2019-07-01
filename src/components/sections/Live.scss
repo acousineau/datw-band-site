@@ -94,10 +94,17 @@
 
   .show-date {
     width: 8%;
+    @include breakpoint-max(bp(medium)) {
+      width: auto;
+      margin-right: 10px;
+    }
   }
 
   .show-day {
     width: 15%;
+    @include breakpoint-max(bp(medium)) {
+      width: auto;
+    }
   }
 
   .show-actions {
