@@ -29,6 +29,9 @@
 
     .top-row {
       margin-bottom: 40px;
+      @include breakpoint-max(bp(medium)) {
+        margin-bottom: 0;
+      }
     }
 
     .player {
@@ -56,6 +59,7 @@
       @include breakpoint-max(bp(medium)) {
         &.dan, &.thom, &.matt, &.sam, &.andy {
           margin: 0;
+          margin-bottom: 10px;
         }
       }
 
