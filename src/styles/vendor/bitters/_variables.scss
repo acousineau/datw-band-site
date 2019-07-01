@@ -53,7 +53,7 @@ $base-timing: ease;
 $breakpoints: (
   max: 1200px,
   large: 1024px,
-  medium: 768px,
+  medium: 813px,
   small: 600px,
 );
 
@@ -65,3 +65,29 @@ $space-3: 30px; // 30px
 $space-4: 40px; // 40px
 $space-5: 50px; // 50px
 $space-6: 60px; // 60px
+
+// Breakpoint Lookup Function
+@function bp($bp) {
+  @return map-get($breakpoints, $bp);
+}
+
+// Define a Responsive Breakpoint
+@mixin breakpoint($min: 0, $max: 9999px) {
+  @media (min-width: #{$min}) and (max-width: #{$max}) {
+    @content;
+  }
+}
+
+// Define a Responsive Breakpoint from $min up
+@mixin breakpoint-min($min) {
+  @include breakpoint(($min + 1)) {
+    @content;
+  }
+}
+
+// Define a Responsive Breakpoint from 0 to $max
+@mixin breakpoint-max($max) {
+  @include breakpoint(0, $max) {
+    @content;
+  }
+}

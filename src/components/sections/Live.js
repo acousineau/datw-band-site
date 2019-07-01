@@ -16,7 +16,7 @@ const Live = props => {
         <h1 className="title">Live Show Dates</h1>
         <div className="shows-table">
           <div className="shows-inner-container">
-            <div className="show-row last-child">
+            <article className="show-row last-child">
               <div className="show-date">Jul 6</div>
               <div className="show-day">Sat</div>
               <div className="show-venue">City Winery</div>
@@ -35,7 +35,7 @@ const Live = props => {
                   RSVP
                 </a>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>

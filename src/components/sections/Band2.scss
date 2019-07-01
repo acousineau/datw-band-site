@@ -22,6 +22,11 @@
     top: -50px;
     left: 10%;
 
+    @include breakpoint-max(bp(medium)) {
+      position: static;
+      width: 95%;
+    }
+
     .top-row {
       margin-bottom: 40px;
     }
@@ -30,6 +35,11 @@
       width: 32%;
       text-align: center;
       display: inline-block;
+
+      @include breakpoint-max(bp(medium)) {
+        display: block;
+        width: 100%;
+      }
 
       &.dan {
         margin-right: 2%;
@@ -41,6 +51,12 @@
 
       &.sam {
         margin-right: 2%;
+      }
+
+      @include breakpoint-max(bp(medium)) {
+        &.dan, &.thom, &.matt, &.sam, &.andy {
+          margin: 0;
+        }
       }
 
       img {

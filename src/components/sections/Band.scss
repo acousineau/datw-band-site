@@ -9,6 +9,22 @@
     min-height: 100vh;
     width: 100%;
     padding-bottom: 100px;
+
+    @include breakpoint-max(bp(medium)) {
+      background-image: none !important;
+      background-color: darken(#753e2a, 22%);
+      padding-bottom: 20px;
+    }
+  }
+
+  .mobile-image {
+    display: none;
+
+    @include breakpoint-max(bp(medium)) {
+      display: block;
+      padding-top: 67%;
+      background-size: cover;
+    }
   }
 
   .band-container {
@@ -17,6 +33,11 @@
     padding-top: 450px;
     margin-left: auto;
     margin-right: auto;
+
+    @include breakpoint-max(bp(medium)) {
+      padding-top: 10px;
+      width: 95%;
+    }
 
     p {
       text-align: left;
