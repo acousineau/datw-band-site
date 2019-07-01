@@ -1,0 +1,51 @@
+@import "core";
+
+.Band2 {
+  position: relative;
+  min-height: 85vh;
+  background: darken(#753e2a, 22%);
+
+  .container {
+    background-size: cover;
+    min-height: 85vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .band-container {
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    position: absolute;
+    top: -50px;
+    left: 10%;
+
+    .top-row {
+      margin-bottom: 40px;
+    }
+
+    .player {
+      width: 32%;
+      text-align: center;
+      display: inline-block;
+
+      &.dan {
+        margin-right: 2%;
+      }
+
+      &.matt {
+        margin-left: 2%;
+      }
+
+      &.sam {
+        margin-right: 2%;
+      }
+
+      img {
+        border: 1px solid #a08b85;
+      }
+    }
+  }
+}

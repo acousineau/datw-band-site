@@ -1,0 +1,38 @@
+@import "core";
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0 5px 0;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  nav, li, .logo {
+    display: inline-block;
+  }
+
+  .logo {
+    margin-bottom: 0;
+  }
+
+  li {
+    text-align: center;
+    width: 140px;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}

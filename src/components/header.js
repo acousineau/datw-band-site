@@ -1,33 +1,57 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+
+import DATWLogo from '../images/DATW-logo-f0f2ec.png'
+
+import './Header.scss'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+  <header className="Header">
+    <nav>
+      <ul>
+        <li className="t-subhead-large">
+          <a href="#live">Live</a>
+        </li>
+        <li className="t-subhead-large">
+          <a href="#news">News</a>
+        </li>
+        {/* <li className="t-subhead-large">
+          <a href="#media">Media</a>
+        </li> */}
+      </ul>
+    </nav>
+    <h1 className="logo">
+      <Link
+        to="/"
+        title="Dan and the Wildfire"
+        style={{
+          color: `white`,
+          textDecoration: `none`,
+        }}
+      >
+        <img
           style={{
-            color: `white`,
-            textDecoration: `none`,
+            width: '200px',
           }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
+          src={DATWLogo}
+          alt="Dan and the Wildfire Logo"
+        />
+      </Link>
+    </h1>
+    <nav>
+      <ul>
+        <li className="t-subhead-large">
+          <a href="#band">Band</a>
+        </li>
+        {/* <li className="t-subhead-large">
+          <a href="#store">Store</a>
+        </li> */}
+        <li className="t-subhead-large">
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 )
 
