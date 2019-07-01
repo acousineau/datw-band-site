@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 
 import './MobileNav.scss'
@@ -5,14 +6,14 @@ import './MobileNav.scss'
 const Item = ({ menuOpen, toggleMenu, link, text }) => {
   return (
     <li className="t-subhead-large">
-      <a
+      <Link
         onClick={() => {
           toggleMenu(!menuOpen)
         }}
-        href={link}
+        to={link}
       >
         {text}
-      </a>
+      </Link>
     </li>
   )
 }
@@ -27,7 +28,7 @@ const MobileNav = ({ menuOpen, toggleMenu }) => {
               key={i}
               menuOpen={menuOpen}
               toggleMenu={toggleMenu}
-              link={`#${t}`}
+              link={`/#${t}`}
               text={t}
             />
           )

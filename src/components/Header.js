@@ -14,10 +14,10 @@ const Header = ({ siteTitle, toggleMenu, menuOpen }) => {
       <nav className="desktop">
         <ul>
           <li className="t-subhead-large">
-            <a href="#live">Live</a>
+            <Link to="/#live">Live</Link>
           </li>
           <li className="t-subhead-large">
-            <a href="#news">News</a>
+            <Link to="/#news">News</Link>
           </li>
           {/* <li className="t-subhead-large">
           <a href="#media">Media</a>
@@ -45,13 +45,13 @@ const Header = ({ siteTitle, toggleMenu, menuOpen }) => {
       <nav className="desktop">
         <ul>
           <li className="t-subhead-large">
-            <a href="#band">Band</a>
+            <Link to="/#band">Band</Link>
           </li>
           {/* <li className="t-subhead-large">
           <a href="#store">Store</a>
         </li> */}
           <li className="t-subhead-large">
-            <a href="#contact">Contact</a>
+            <Link to="/#contact">Contact</Link>
           </li>
         </ul>
       </nav>
