@@ -1,0 +1,46 @@
+@import "core";
+
+.Music {
+  position: relative;
+  min-height: 100vh;
+
+  .container {
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    filter: blur(7px);
+  }
+
+  .music-container {
+    position: fixed;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include breakpoint-max(bp(medium)) {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  .links-container {
+    background: rgba(#000, 0.5);
+    border-radius: 4px;
+    padding: 20px;
+
+    a {
+      color: #fff;
+      font-size: 40px;
+      display: block;
+      border: 1px solid white;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      padding: 10px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
