@@ -55,7 +55,7 @@ const Contact = props => {
             </div>
           </form>
           <h1>Booking and Press Inquiries</h1>
-          <a href="/things" className="booking">
+          <a href="mailto:booking@danandthewildfire.com" className="booking">
             Email booking@danandthewildfire.com
           </a>
         </div>
