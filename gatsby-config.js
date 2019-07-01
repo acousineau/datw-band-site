@@ -7,6 +7,21 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Libre Franklin`,
+            variants: [`400`, '700'],
+          },
+          {
+            family: `Teko`,
+            variants: [`300`, `400`],
+          },
+        ],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-sass',
       options: {
         includePaths: ['src/styles'],
