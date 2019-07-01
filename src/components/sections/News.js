@@ -24,9 +24,9 @@ const News = props => {
                 New music has finally arrived! Dan &amp; the Wildfire will be
                 releasing "The River's Gonna Rise," this year. This latest
                 offering will be a full length album released in four separate
-                pieces. Check out{' '}
+                pieces.{' '}
                 <a href="spotify:artist:3a5h90HoFJJTe6FwnF4zIx">
-                  Check out album on Spotify
+                  Check out the album on Spotify
                 </a>
               </p>
             </div>
