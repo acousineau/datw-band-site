@@ -59,6 +59,8 @@ class Contact extends Component {
               className="contact-form"
               name="mailing-list"
               onSubmit={this.handleSubmit}
+              data-netlify="true"
+              data-netlify-recaptcha="true"
             >
               <div className="input-row">
                 <label htmlFor="firstName" className="firstName--label">
@@ -110,6 +112,7 @@ class Contact extends Component {
                   />
                 </label>
               </div>
+              <div data-netlify-recaptcha="true"></div>
               <div className="input-row submit">
                 <button type="submit">Join Mailing List</button>
               </div>
