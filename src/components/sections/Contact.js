@@ -28,21 +28,21 @@ class Contact extends Component {
     }
   }
 
-  onChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-  }
+  // onChange = e => {
+  //   this.setState({ [e.target.name]: e.target.value })
+  // }
 
-  handleSubmit = e => {
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({ 'form-name': 'mailing-list', ...this.state }),
-    })
-      .then(() => alert('Thank you for joining!'))
-      .catch(error => alert(error))
+  // handleSubmit = e => {
+  //   fetch('/', {
+  //     method: 'POST',
+  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  //     body: encode({ 'form-name': 'mailing-list', ...this.state }),
+  //   })
+  //     .then(() => alert('Thank you for joining!'))
+  //     .catch(error => alert(error))
 
-    e.preventDefault()
-  }
+  //   e.preventDefault()
+  // }
 
   render() {
     return (
@@ -57,11 +57,13 @@ class Contact extends Component {
             <h1>Join Our Mailing List</h1>
             <form
               className="contact-form"
+              method="post"
+              action="/success"
               name="mailing-list"
-              onSubmit={this.handleSubmit}
               data-netlify="true"
-              data-netlify-recaptcha="true"
+              data-netlify-honeypot="bot-field"
             >
+              <input type="hidden" name="bot-field" />
               <div className="input-row">
                 <label htmlFor="firstName" className="firstName--label">
                   First Name*{' '}
@@ -70,8 +72,8 @@ class Contact extends Component {
                     id="firstName"
                     name="firstName"
                     required
-                    value={this.state.firstName}
-                    onChange={this.onChange}
+                    // value={this.state.firstName}
+                    // onChange={this.onChange}
                   />
                 </label>
                 <label htmlFor="lastName" className="lastName--label">
@@ -81,8 +83,8 @@ class Contact extends Component {
                     id="lastName"
                     name="lastName"
                     required
-                    value={this.state.lastName}
-                    onChange={this.onChange}
+                    // value={this.state.lastName}
+                    // onChange={this.onChange}
                   />
                 </label>
               </div>
@@ -94,8 +96,8 @@ class Contact extends Component {
                     id="email"
                     name="email"
                     required
-                    value={this.state.email}
-                    onChange={this.onChange}
+                    // value={this.state.email}
+                    // onChange={this.onChange}
                   />
                 </label>
               </div>
@@ -107,12 +109,11 @@ class Contact extends Component {
                     type="text"
                     id="cityState"
                     name="cityState"
-                    value={this.state.cityState}
-                    onChange={this.onChange}
+                    // value={this.state.cityState}
+                    // onChange={this.onChange}
                   />
                 </label>
               </div>
-              <div data-netlify-recaptcha="true"></div>
               <div className="input-row submit">
                 <button type="submit">Join Mailing List</button>
               </div>
