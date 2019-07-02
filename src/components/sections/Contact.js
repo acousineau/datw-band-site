@@ -10,12 +10,6 @@ import Background from '../../images/bg-contact.jpg'
 
 import './Contact.scss'
 
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
-
 class Contact extends Component {
   constructor(props) {
     super(props)
@@ -27,22 +21,6 @@ class Contact extends Component {
       cityState: '',
     }
   }
-
-  // onChange = e => {
-  //   this.setState({ [e.target.name]: e.target.value })
-  // }
-
-  // handleSubmit = e => {
-  //   fetch('/', {
-  //     method: 'POST',
-  //     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-  //     body: encode({ 'form-name': 'mailing-list', ...this.state }),
-  //   })
-  //     .then(() => alert('Thank you for joining!'))
-  //     .catch(error => alert(error))
-
-  //   e.preventDefault()
-  // }
 
   render() {
     return (
@@ -67,51 +45,24 @@ class Contact extends Component {
               <div className="input-row">
                 <label htmlFor="firstName" className="firstName--label">
                   First Name*{' '}
-                  <input
-                    type="text"
-                    id="firstName"
-                    name="firstName"
-                    required
-                    // value={this.state.firstName}
-                    // onChange={this.onChange}
-                  />
+                  <input type="text" id="firstName" name="firstName" required />
                 </label>
                 <label htmlFor="lastName" className="lastName--label">
                   Last Name*
-                  <input
-                    type="text"
-                    id="lastName"
-                    name="lastName"
-                    required
-                    // value={this.state.lastName}
-                    // onChange={this.onChange}
-                  />
+                  <input type="text" id="lastName" name="lastName" required />
                 </label>
               </div>
               <div className="input-row">
                 <label htmlFor="email">
                   Email*
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    // value={this.state.email}
-                    // onChange={this.onChange}
-                  />
+                  <input type="email" id="email" name="email" required />
                 </label>
               </div>
               <div className="input-row">
                 <label htmlFor="cityState">
                   City / State{' '}
                   <span className="not-required">(Not required)</span>
-                  <input
-                    type="text"
-                    id="cityState"
-                    name="cityState"
-                    // value={this.state.cityState}
-                    // onChange={this.onChange}
-                  />
+                  <input type="text" id="cityState" name="cityState" />
                 </label>
               </div>
               <div className="input-row submit">

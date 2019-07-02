@@ -1,6 +1,4 @@
-@import "core";
-
-#media {
+#four-oh-four {
   position: relative;
   min-height: 100vh;
 
@@ -12,11 +10,6 @@
 
   .title {
     padding-top: 120px;
-    text-align: center;
-  }
-
-  .follow {
-    color: $green;
     text-align: center;
   }
 }
