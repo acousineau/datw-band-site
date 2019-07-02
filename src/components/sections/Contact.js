@@ -24,10 +24,9 @@ const Contact = props => {
           <form
             className="contact-form"
             name="mailing-list"
-            method="post"
-            action="/success"
             data-netlify="true"
-            data-netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true"
+            method="post"
           >
             <div className="input-row">
               <label htmlFor="firstName" className="firstName--label">
@@ -52,7 +51,8 @@ const Contact = props => {
                 <input type="text" id="cityState" name="cityState" />
               </label>
             </div>
-            <input type="hidden" name="bot-field" />
+            <div data-netlify-recaptcha="true"></div>
+            <input type="hidden" name="form-name" value="mailing-list" />
             <div className="input-row submit">
               <button type="submit">Join Mailing List</button>
             </div>
