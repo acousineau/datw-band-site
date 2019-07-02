@@ -22,11 +22,12 @@ const Contact = props => {
         <div className="contact-container">
           <h1>Join Our Mailing List</h1>
           <form
-            action="/"
-            name="mailing-list"
-            method="POST"
-            data-netlify="true"
             className="contact-form"
+            name="mailing-list"
+            method="post"
+            action="/success"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
             <div className="input-row">
               <label htmlFor="firstName" className="firstName--label">
@@ -51,6 +52,7 @@ const Contact = props => {
                 <input type="text" id="cityState" name="cityState" />
               </label>
             </div>
+            <input type="hidden" name="bot-field" />
             <div className="input-row submit">
               <button type="submit">Join Mailing List</button>
             </div>
