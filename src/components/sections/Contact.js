@@ -22,25 +22,26 @@ const Contact = props => {
         <div className="contact-container">
           <h1>Join Our Mailing List</h1>
           <form
-            onSubmit={() => {
-              console.log('submitted!!')
-            }}
+            action="/"
+            name="mailing-list"
+            method="POST"
+            data-netlify="true"
             className="contact-form"
           >
             <div className="input-row">
               <label htmlFor="firstName" className="firstName--label">
                 First Name*{' '}
-                <input type="text" id="firstName" name="firstName" />
+                <input type="text" id="firstName" name="firstName" required />
               </label>
               <label htmlFor="lastName" className="lastName--label">
                 Last Name*
-                <input type="text" id="lastName" name="lastName" />
+                <input type="text" id="lastName" name="lastName" required />
               </label>
             </div>
             <div className="input-row">
               <label htmlFor="email">
                 Email*
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" required />
               </label>
             </div>
             <div className="input-row">
