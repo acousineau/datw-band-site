@@ -110,8 +110,6 @@ class Contact extends Component {
                   />
                 </label>
               </div>
-              <div data-netlify-recaptcha="true"></div>
-              <input type="hidden" name="form-name" value="mailing-list" />
               <div className="input-row submit">
                 <button type="submit">Join Mailing List</button>
               </div>
