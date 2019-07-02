@@ -75,13 +75,25 @@ class Contact extends Component {
             </a>
           </div>
           <div className="social-icons">
-            <a href="https://www.instagram.com/datwildfire/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/datwildfire/"
+            >
               <FontAwesomeIcon icon={faInstagram} />
             </a>
-            <a href="https://twitter.com/datwildfire">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://twitter.com/datwildfire"
+            >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
-            <a href="https://www.facebook.com/danandthewildfire/">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.facebook.com/danandthewildfire/"
+            >
               <FontAwesomeIcon icon={faFacebookSquare} />
             </a>
           </div>

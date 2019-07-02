@@ -23,13 +23,26 @@ const Music = () => (
         <div className="music-container">
           <h1>Stream or Download Below:</h1>
           <div className="links-container">
-            <a href="https://open.spotify.com/artist/3a5h90HoFJJTe6FwnF4zIx?si=0tPa5KrOTVOUEv0rZZWOaw">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://open.spotify.com/artist/3a5h90HoFJJTe6FwnF4zIx?si=0tPa5KrOTVOUEv0rZZWOaw"
+            >
               <FontAwesomeIcon icon={faSpotify} /> Spotify
             </a>
-            <a href="https://music.apple.com/us/album/the-rivers-gonna-rise-pt-3-single/1440085688">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://music.apple.com/us/album/the-rivers-gonna-rise-pt-3-single/1440085688"
+            >
               <FontAwesomeIcon icon={faItunes} /> Apple Music
             </a>
-            <a href="https://dropbox.com" style={{ marginBottom: '0' }}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://dropbox.com"
+              style={{ marginBottom: '0' }}
+            >
               <FontAwesomeIcon icon={faDropbox} /> Dropbox
             </a>
           </div>

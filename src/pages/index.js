@@ -15,13 +15,13 @@ import Contact from '../components/sections/Contact'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Home url="#home" />
-    <Live url="#live" />
-    <News url="#news" />
+    <Home />
+    <Live />
+    <News />
     {/* <Media url="#media"></Media> */}
-    <Band url="#band" />
+    <Band />
     <Band2 />
-    <Contact url="#contact"></Contact>
+    <Contact />
   </Layout>
 )
 
