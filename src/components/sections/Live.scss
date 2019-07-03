@@ -25,21 +25,11 @@
     padding: 0 20px;
     display: table;
     width: 100%;
-
-    @include breakpoint-max(bp(medium)) {
-      position: relative;
-      display: block;
-    }
   }
 
   .show-row {
     padding: 14px 0px;
     display: table-row;
-
-    @include breakpoint-max(bp(medium)) {
-      display: block;
-      border-bottom: 1px solid rgba(#fff, 0.35);
-    }
 
     &.last-child {
       & .show-date,
@@ -47,10 +37,6 @@
       & .show-venue,
       & .show-location,
       & .show-actions {
-        border-bottom: none;
-      }
-
-      @include breakpoint-max(bp(medium)) {
         border-bottom: none;
       }
     }
@@ -65,62 +51,80 @@
     font-weight: bold;
     padding: 14px 0;
     border-bottom: 1px solid rgba(#fff, 0.35);
-
-    @include breakpoint-max(bp(medium)) {
-      display: block;
-      padding: 0;
-      border: none;
-    }
-  }
-
-  .show-venue {
-    @include breakpoint-max(bp(medium)) {
-      padding-bottom: 5px;
-    }
-  }
-
-  .show-date,
-  .show-day {
-    @include breakpoint-max(bp(medium)) {
-      display: inline-block;
-      padding-bottom: 14px;
-    }
   }
 
   .show-date {
     width: 8%;
-    @include breakpoint-max(bp(medium)) {
-      width: auto;
-      margin-right: 10px;
-    }
   }
 
   .show-day {
     width: 15%;
-    @include breakpoint-max(bp(medium)) {
-      width: auto;
-    }
-  }
-
-  .show-location {
-    @include breakpoint-max(bp(medium)) {
-      margin-bottom: 10px;
-    }
   }
 
   .show-actions {
     text-align: right;
-    
-    @include breakpoint-max(bp(medium)) {
+
+    .tickets {
+      margin-right: 10px;
+    }
+  }
+}
+
+@include breakpoint-max(bp(medium)) {
+  #live {
+    .shows-inner-container {
+      position: relative;
+      display: block;
+    }
+
+    .show-row {
+      display: block;
+      border-bottom: 1px solid rgba(#fff, 0.35);
+
+      &.last-child {
+        border-bottom: none;
+      }
+    }
+
+    .show-date,
+    .show-day,
+    .show-venue,
+    .show-location,
+    .show-actions {
+      display: block;
+      padding: 0;
+      border: none;
+    }
+
+    .show-venue {
+      padding-bottom: 5px;
+    }
+
+    .show-date,
+    .show-day {
+      display: inline-block;
+      padding-bottom: 14px;
+    }
+
+    .show-date {
+      width: auto;
+      margin-right: 10px;
+    }
+
+    .show-day {
+      width: auto;
+    }
+
+    .show-location {
+      margin-bottom: 10px;
+    }
+
+    .show-actions {
       display: flex;
 
       a {
         width: 100%;
       }
-    }
-
-    .tickets {
-      margin-right: 10px;
     }
   }
 }

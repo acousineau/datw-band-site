@@ -22,27 +22,14 @@
     top: -50px;
     left: 10%;
 
-    @include breakpoint-max(bp(medium)) {
-      position: static;
-      width: 95%;
-    }
-
     .top-row {
       margin-bottom: 40px;
-      @include breakpoint-max(bp(medium)) {
-        margin-bottom: 0;
-      }
     }
 
     .player {
       width: 32%;
       text-align: center;
       display: inline-block;
-
-      @include breakpoint-max(bp(medium)) {
-        display: block;
-        width: 100%;
-      }
 
       &.dan {
         margin-right: 2%;
@@ -56,15 +43,31 @@
         margin-right: 2%;
       }
 
-      @include breakpoint-max(bp(medium)) {
+      img {
+        border: 1px solid #a08b85;
+      }
+    }
+  }
+}
+
+@include breakpoint-max(bp(medium)) {
+  .Band2 {
+    .band-container {
+      position: static;
+      width: 95%;
+
+      .top-row {
+        margin-bottom: 0;
+      }
+
+      .player {
+        display: block;
+        width: 100%;
+
         &.dan, &.thom, &.matt, &.sam, &.andy {
           margin: 0;
           margin-bottom: 40px;
         }
-      }
-
-      img {
-        border: 1px solid #a08b85;
       }
     }
   }

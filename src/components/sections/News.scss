@@ -16,10 +16,6 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 50px;
-
-    @include breakpoint-max(bp(medium)) {
-      width: 95%;
-    }
   }
 
   .news-item {
@@ -28,10 +24,6 @@
     > * {
       display: inline-block;
       vertical-align: top;
-
-      @include breakpoint-max(bp(medium)) {
-        display: block;
-      }
     }
   }
 
@@ -40,11 +32,6 @@
     text-align: right;
     font-weight: bold;
     padding: 25px 37px 0 37px;
-
-    @include breakpoint-max(bp(medium)) {
-      padding: 0;
-      text-align: left;
-    }
   }
 
   .story {
@@ -55,8 +42,25 @@
     border-bottom: 1px solid rgba(#fff, 0.35);
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
 
-    @include breakpoint-max(bp(medium)) {
+@include breakpoint-max(bp(medium)) {
+  #news {
+    .news-container {
+      width: 95%;
+    }
+
+    .news-item > * {
+      display: block;
+    }
+
+    .date {
+      padding: 0;
+      text-align: left;
+    }
+
+    .story {
       padding: 0;
       margin: 0;
       width: 100%;

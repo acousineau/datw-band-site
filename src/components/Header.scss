@@ -10,39 +10,16 @@
   left: 0;
   z-index: 1;
 
-  @include breakpoint-max(bp(medium)) {
-    justify-content: space-between;
-    position: absolute;
-    padding: 2%;
-  }
-
   .menu-hamburger {
     display: none;
-
-    @include breakpoint-max(bp(medium)) {
-      display: block;
-      background: none;
-      padding: 0;
-    }
   }
 
   nav, li, .logo {
     display: inline-block;
   }
 
-  nav.desktop {
-    @include breakpoint-max(bp(medium)) {
-      display: none;
-    }
-  }
-
   .logo {
     margin-bottom: 0;
-
-    @include breakpoint-max(bp(medium)) {
-      width: 40%;
-
-    }
   }
 
   li {
@@ -60,6 +37,28 @@
 
     &:hover {
       color: $green;
+    }
+  }
+}
+
+@include breakpoint-max(bp(medium)) {
+  .Header {
+    justify-content: space-between;
+    position: absolute;
+    padding: 2%;
+
+    .menu-hamburger {
+      display: block;
+      background: none;
+      padding: 0;
+    }
+
+    nav.desktop {
+      display: none;
+    }
+
+    .logo {
+      width: 40%;
     }
   }
 }
