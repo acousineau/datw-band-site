@@ -23,5 +23,22 @@
     width: 90%;
     max-width: 500px;
     margin: auto;
+
+    a {
+      color: #fff;
+      font-size: 40px;
+      display: block;
+      border: 1px solid white;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-bottom: 20px;
+      padding: 10px;
+      text-align: left;
+    
+      &:hover {
+        text-decoration: none;
+        background: rgba(#fff, 0.2);
+      }
+    }
   }
 }
