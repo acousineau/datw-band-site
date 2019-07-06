@@ -33,7 +33,7 @@ const Music = () => (
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://music.apple.com/us/artist/dan-and-the-wildfire/566347721"
+              href="https://music.apple.com/us/album/the-rivers-gonna-rise/1471828153"
             >
               <FontAwesomeIcon icon={faItunes} /> Apple Music
             </a>
