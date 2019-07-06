@@ -33,14 +33,14 @@ const Music = () => (
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://music.apple.com/us/album/the-rivers-gonna-rise-pt-3-single/1440085688"
+              href="https://music.apple.com/us/artist/dan-and-the-wildfire/566347721"
             >
               <FontAwesomeIcon icon={faItunes} /> Apple Music
             </a>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://dropbox.com"
+              href="https://www.dropbox.com/sh/nifgr56qr93pngm/AAB1nnJf54yart8yWOy73Sc2a?dl=0&fbclid=IwAR0Uqd_OaNf_kLnVQoaYrraC4hf0gRwFNkhGIj524nR36GvG8e3xnthYNGI"
               style={{ marginBottom: '0' }}
             >
               <FontAwesomeIcon icon={faDropbox} /> Dropbox
