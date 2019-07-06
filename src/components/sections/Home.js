@@ -30,7 +30,9 @@ const Home = props => {
           <h1 style={{ marginBottom: '5px' }}>The River's Gonna Rise</h1>
           <a
             className="button"
-            href="https://open.spotify.com/artist/3a5h90HoFJJTe6FwnF4zIx?si=tjG0Fl65TZ6RM45kGRSFiQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://open.spotify.com/artist/3a5h90HoFJJTe6FwnF4zIx?si=0tPa5KrOTVOUEv0rZZWOaw"
           >
             Stream on Spotify
           </a>
