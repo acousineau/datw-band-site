@@ -42,22 +42,26 @@ const Live = () => {
                 <div className="show-venue">{show.venue}</div>
                 <div className="show-location">{show.location}</div>
                 <div className="show-actions">
-                  <a
-                    className="button small tickets"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={show.tickets}
-                  >
-                    Tickets
-                  </a>
-                  <a
-                    className="button small rsvp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={show.rsvp}
-                  >
-                    RSVP
-                  </a>
+                  {show.tickets && (
+                    <a
+                      className="button small tickets"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={show.tickets}
+                    >
+                      Tickets
+                    </a>
+                  )}
+                  {show.rsvp && (
+                    <a
+                      className="button small rsvp"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={show.rsvp}
+                    >
+                      RSVP
+                    </a>
+                  )}
                 </div>
               </article>
             ))}

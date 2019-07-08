@@ -26,7 +26,7 @@ const Music = () => (
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://open.spotify.com/artist/3a5h90HoFJJTe6FwnF4zIx?si=0tPa5KrOTVOUEv0rZZWOaw"
+              href="https://open.spotify.com/album/5oIxiaiyJC1J5rqfCVQAbR?si=BjLAk0yRRNqA0HPiaG15OQ"
             >
               <FontAwesomeIcon icon={faSpotify} /> Spotify
             </a>
@@ -43,7 +43,7 @@ const Music = () => (
               href="https://www.dropbox.com/sh/sgrywldzukxnm3n/AAD-ygRHwlGBGFU6LQACtRk3a?dl=0"
               style={{ marginBottom: '0' }}
             >
-              <FontAwesomeIcon icon={faDropbox} /> Dropbox
+              <FontAwesomeIcon icon={faDropbox} /> Download
             </a>
           </div>
         </div>

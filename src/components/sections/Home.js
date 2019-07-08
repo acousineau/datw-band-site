@@ -32,7 +32,7 @@ const Home = props => {
             className="button"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://open.spotify.com/artist/3a5h90HoFJJTe6FwnF4zIx?si=0tPa5KrOTVOUEv0rZZWOaw"
+            href="https://open.spotify.com/album/5oIxiaiyJC1J5rqfCVQAbR?si=BjLAk0yRRNqA0HPiaG15OQ"
           >
             Stream on Spotify
           </a>
