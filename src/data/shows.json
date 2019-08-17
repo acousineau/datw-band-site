@@ -1,4 +1,46 @@
 [{
+    "date": "Nov 14",
+    "day": "Thurs",
+    "venue": "The Burren",
+    "location": "Somerville, MA, United States",
+    "tickets": "",
+    "rsvp": ""
+},{
+    "date": "Oct 11",
+    "day": "Fri",
+    "venue": "Edisto Blackwater Boogie",
+    "location": "Ridgeville, SC, United States",
+    "tickets": "https://www.eventbrite.com/e/edisto-blackwater-boogie-tickets-67258071703",
+    "rsvp": "https://www.facebook.com/events/1378274278977566/"
+},{
+    "date": "Sept 19",
+    "day": "Thurs",
+    "venue": "Sofar",
+    "location": "Boston, MA, United States",
+    "tickets": "",
+    "rsvp": ""
+},{
+    "date": "Sept 14",
+    "day": "Sat",
+    "venue": "Levitate Backyard",
+    "location": "Marshfield, MA, United States",
+    "tickets": "",
+    "rsvp": ""
+},{
+    "date": "Sept 7",
+    "day": "Sat",
+    "venue": "Urban Farm Fermentory",
+    "location": "Portland, ME, United States",
+    "tickets": "",
+    "rsvp": "https://www.facebook.com/events/340410239944069/"
+}, {
+    "date": "Aug 17",
+    "day": "Sat",
+    "venue": "The Barn",
+    "location": "South Egremont, MA, United States",
+    "tickets": "https://www.universe.com/events/dan-and-the-wildfire-tickets-Z26J4M?fbclid=IwAR2gWPxRMQcLmVZeo7aedX4rT9crYFkjZQGTZfUWYYPOPzOTiJA2KYCxZPE",
+    "rsvp": "https://www.facebook.com/events/437740680289529/"
+}, {
     "date": "Jul 6",
     "day": "Sat",
     "venue": "City Winery Boston",
