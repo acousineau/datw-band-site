@@ -27,6 +27,7 @@ const Live = () => {
         className="container"
         style={{
           backgroundImage: `url(${Background})`,
+          paddingBottom: '20px',
         }}
       >
         <h1 className="title">Live Show Dates</h1>
