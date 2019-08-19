@@ -1,50 +1,43 @@
 [{
-    "date": "Nov 14",
-    "day": "Thurs",
+    "date": "2019-11-14T05:00:00.000Z",
     "venue": "The Burren",
     "location": "Somerville, MA, United States",
     "tickets": "",
     "rsvp": ""
 },{
-    "date": "Oct 11",
-    "day": "Fri",
+    "date": "2019-10-11T05:00:00.000Z",
     "venue": "Edisto Blackwater Boogie",
     "location": "Ridgeville, SC, United States",
     "tickets": "https://www.eventbrite.com/e/edisto-blackwater-boogie-tickets-67258071703",
     "rsvp": "https://www.facebook.com/events/1378274278977566/"
 },{
-    "date": "Sept 19",
-    "day": "Thurs",
+    "date": "2019-09-19T05:00:00.000Z",
     "venue": "Sofar",
     "location": "Boston, MA, United States",
     "tickets": "",
     "rsvp": ""
 },{
-    "date": "Sept 14",
-    "day": "Sat",
+    "date": "2019-09-14T05:00:00.000Z",
     "venue": "Levitate Backyard",
     "location": "Marshfield, MA, United States",
     "tickets": "",
     "rsvp": ""
 },{
-    "date": "Sept 7",
-    "day": "Sat",
+    "date": "2019-09-07T05:00:00.000Z",
     "venue": "Urban Farm Fermentory",
     "location": "Portland, ME, United States",
     "tickets": "",
     "rsvp": "https://www.facebook.com/events/340410239944069/"
 }, {
-    "date": "Aug 17",
-    "day": "Sat",
+    "date": "2019-08-17T05:00:00.000Z",
     "venue": "The Barn",
     "location": "South Egremont, MA, United States",
     "tickets": "https://www.universe.com/events/dan-and-the-wildfire-tickets-Z26J4M?fbclid=IwAR2gWPxRMQcLmVZeo7aedX4rT9crYFkjZQGTZfUWYYPOPzOTiJA2KYCxZPE",
     "rsvp": "https://www.facebook.com/events/437740680289529/"
 }, {
-    "date": "Jul 6",
-    "day": "Sat",
+    "date": "2019-07-06T05:00:00.000Z",
     "venue": "City Winery Boston",
     "location": "Boston, MA, United States",
-    "tickets": "",
-    "rsvp": ""
+    "tickets": "https://citywinery.com/boston/danandthewildfire070619.html",
+    "rsvp": "https://www.facebook.com/events/269027110699980/"
 }]

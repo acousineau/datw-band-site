@@ -1,6 +1,6 @@
 @import "core";
 
-#live {
+#past-dates {
   position: relative;
   min-height: 100vh;
 
@@ -66,25 +66,6 @@
 
     .tickets {
       margin-right: 10px;
-    }
-  }
-
-  .pagination {
-    width: 90%;
-    margin: 20px auto;
-
-    a {
-      text-transform: uppercase;
-      color: #fff;
-      text-decoration: underline;
-      font-weight: bold;
-      display: inline-block;
-      // vertical-align: top;
-
-      &:hover {
-        color: shade(#fff, 25%);
-        text-decoration: none;
-      }
     }
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import { format, isAfter } from 'date-fns'
 
 import Background from '../../images/bg-live.jpg'
 
@@ -11,7 +12,6 @@ const Live = () => {
       allShowsJson {
         nodes {
           date
-          day
           venue
           tickets
           rsvp
@@ -20,6 +20,10 @@ const Live = () => {
       }
     }
   `)
+
+  const dates = data.allShowsJson.nodes.sort((a, b) =>
+    a.date < b.date ? -1 : 1
+  )
 
   return (
     <section id="live">
@@ -33,40 +37,50 @@ const Live = () => {
         <h1 className="title">Live Show Dates</h1>
         <div className="shows-table">
           <div className="shows-inner-container">
-            {data.allShowsJson.nodes.map((show, i, a) => (
-              <article
-                key={i}
-                className={`show-row ${i === a.length - 1 ? 'last-child' : ''}`}
-              >
-                <div className="show-date">{show.date}</div>
-                <div className="show-day">{show.day}</div>
-                <div className="show-venue">{show.venue}</div>
-                <div className="show-location">{show.location}</div>
-                <div className="show-actions">
-                  {show.tickets && (
-                    <a
-                      className="button small tickets"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={show.tickets}
-                    >
-                      Tickets
-                    </a>
-                  )}
-                  {show.rsvp && (
-                    <a
-                      className="button small rsvp"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href={show.rsvp}
-                    >
-                      RSVP
-                    </a>
-                  )}
-                </div>
-              </article>
-            ))}
+            {dates
+              .filter(show => {
+                const now = Date.now()
+                return isAfter(show.date, now)
+              })
+              .map((show, i, a) => (
+                <article
+                  key={i}
+                  className={`show-row ${
+                    i === a.length - 1 ? 'last-child' : ''
+                  }`}
+                >
+                  <div className="show-date">{format(show.date, 'MMM D')}</div>
+                  <div className="show-day">{format(show.date, 'ddd')}</div>
+                  <div className="show-venue">{show.venue}</div>
+                  <div className="show-location">{show.location}</div>
+                  <div className="show-actions">
+                    {show.tickets && (
+                      <a
+                        className="button small tickets"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={show.tickets}
+                      >
+                        Tickets
+                      </a>
+                    )}
+                    {show.rsvp && (
+                      <a
+                        className="button small rsvp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        href={show.rsvp}
+                      >
+                        RSVP
+                      </a>
+                    )}
+                  </div>
+                </article>
+              ))}
           </div>
+        </div>
+        <div className="pagination">
+          <Link to="/past-dates">Past Dates</Link>
         </div>
       </div>
     </section>
