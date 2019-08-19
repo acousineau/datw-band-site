@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { format, isBefore } from 'date-fns'
+import { format, isBefore, subDays } from 'date-fns'
 
 import Layout from '../components/layout'
 // import Background from '../images/bg-live.jpg'
@@ -41,7 +41,7 @@ const PastDates = () => {
             <div className="shows-inner-container">
               {dates
                 .filter(show => {
-                  const now = Date.now()
+                  const now = subDays(Date.now(), 1)
                   return isBefore(show.date, now)
                 })
                 .map((show, i, a) => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql, Link } from 'gatsby'
-import { format, isAfter } from 'date-fns'
+import { format, isAfter, subDays } from 'date-fns'
 
 import Background from '../../images/bg-live.jpg'
 
@@ -39,7 +39,8 @@ const Live = () => {
           <div className="shows-inner-container">
             {dates
               .filter(show => {
-                const now = Date.now()
+                const now = subDays(Date.now(), 1)
+                // const now = Date.now()
                 return isAfter(show.date, now)
               })
               .map((show, i, a) => (
