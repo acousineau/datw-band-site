@@ -1,4 +1,10 @@
 [{
+    "date": "2019-09-13T05:00:00.000Z",
+    "venue": "City Winery Boston",
+    "location": "Boston, MA, United States",
+    "tickets": "https://citywinery.com/boston/rhettmilleracoustic91319.html",
+    "rsvp": "https://www.facebook.com/events/878865555790505/"
+},{
     "date": "2019-11-14T05:00:00.000Z",
     "venue": "The Burren",
     "location": "Somerville, MA, United States",
