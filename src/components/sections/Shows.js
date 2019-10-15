@@ -4,9 +4,9 @@ import { format, isAfter, subDays } from 'date-fns'
 
 import Background from '../../images/bg-live.jpg'
 
-import './Live.scss'
+import './Shows.scss'
 
-const Live = () => {
+const Shows = () => {
   const data = useStaticQuery(graphql`
     query Shows {
       allShowsJson {
@@ -26,7 +26,7 @@ const Live = () => {
   )
 
   return (
-    <section id="live">
+    <section id="shows">
       <div
         className="container"
         style={{
@@ -43,13 +43,8 @@ const Live = () => {
                 // const now = Date.now()
                 return isAfter(show.date, now)
               })
-              .map((show, i, a) => (
-                <article
-                  key={i}
-                  className={`show-row ${
-                    i === a.length - 1 ? 'last-child' : ''
-                  }`}
-                >
+              .map((show, i) => (
+                <article key={i} className="show-row">
                   <div className="show-date">{format(show.date, 'MMM D')}</div>
                   <div className="show-day">{format(show.date, 'ddd')}</div>
                   <div className="show-venue">{show.venue}</div>
@@ -88,4 +83,4 @@ const Live = () => {
   )
 }
 
-export default Live
+export default Shows

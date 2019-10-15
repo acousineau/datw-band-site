@@ -14,7 +14,7 @@ const Header = ({ siteTitle, toggleMenu, menuOpen }) => {
       <nav className="desktop">
         <ul>
           <li className="t-subhead-large">
-            <Link to="/#live">Live</Link>
+            <Link to="/#shows">Shows</Link>
           </li>
           <li className="t-subhead-large">
             <Link to="/#news">News</Link>

@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 
 import Home from '../components/sections/Home'
-import Live from '../components/sections/Live'
+import Shows from '../components/sections/Shows'
 import News from '../components/sections/News'
 // import Media from '../components/sections/Media'
 import Band from '../components/sections/Band'
@@ -16,7 +16,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Home />
-    <Live />
+    <Shows />
     <News />
     {/* <Media url="#media"></Media> */}
     <Band />

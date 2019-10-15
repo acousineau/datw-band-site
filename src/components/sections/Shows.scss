@@ -1,6 +1,6 @@
 @import "core";
 
-#live {
+#shows {
   position: relative;
   min-height: 100vh;
 
@@ -31,7 +31,7 @@
     padding: 14px 0px;
     display: table-row;
 
-    &.last-child {
+    &:last-child {
       & .show-date,
       & .show-day,
       & .show-venue,
@@ -100,7 +100,7 @@
       display: block;
       border-bottom: 1px solid rgba(#fff, 0.35);
 
-      &.last-child {
+      &:last-child {
         border-bottom: none;
       }
     }

@@ -22,7 +22,7 @@ const MobileNav = ({ menuOpen, toggleMenu }) => {
   return (
     <nav className={`mobile ${menuOpen ? 'show' : ''}`}>
       <ul>
-        {['home', 'live', 'news', 'band', 'contact'].map((t, i) => {
+        {['home', 'shows', 'news', 'band', 'contact'].map((t, i) => {
           return (
             <Item
               key={i}

@@ -44,13 +44,8 @@ const PastDates = () => {
                   const now = subDays(Date.now(), 1)
                   return isBefore(show.date, now)
                 })
-                .map((show, i, a) => (
-                  <article
-                    key={i}
-                    className={`show-row ${
-                      i === a.length - 1 ? 'last-child' : ''
-                    }`}
-                  >
+                .map((show, i) => (
+                  <article key={i} className="show-row">
                     <div className="show-date">
                       {format(show.date, 'MMM D')}
                     </div>
