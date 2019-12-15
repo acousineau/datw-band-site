@@ -71,7 +71,7 @@
 }
 
 @include breakpoint-max(bp(medium)) {
-  #live {
+  #past-dates {
     .shows-inner-container {
       position: relative;
       display: block;

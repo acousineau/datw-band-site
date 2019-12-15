@@ -90,7 +90,7 @@
 }
 
 @include breakpoint-max(bp(medium)) {
-  #live {
+  #shows {
     .shows-inner-container {
       position: relative;
       display: block;

@@ -1,4 +1,17 @@
-[{
+[
+    {
+        "date": "2020-04-03T05:00:00.000Z",
+        "venue": "The Burren",
+        "location": "Somerville, MA, United States"
+    },
+    {
+        "date": "2020-01-29T05:00:00.000Z",
+        "venue": "City Winery Boston",
+        "location": "Boston, MA, United States",
+        "tickets": "https://citywinery.com/boston/dan-the-wildfire-1-29-20.html",
+        "rsvp": "https://www.facebook.com/events/448532092473392/"
+    },
+    {
     "date": "2019-09-13T05:00:00.000Z",
     "venue": "City Winery Boston",
     "location": "Boston, MA, United States",
