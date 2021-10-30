@@ -31,20 +31,31 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Libre Franklin`,
-            variants: [`400`, '700'],
-          },
-          {
-            family: `Teko`,
-            variants: [`300`, `400`],
-          },
+          'Libre Franklin:400,700',
+          `Teko\:300,400`,
+          // `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
         ],
+        display: 'swap',
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Libre Franklin`,
+    //         variants: [`400`, '700'],
+    //       },
+    //       {
+    //         family: `Teko`,
+    //         variants: [`300`, `400`],
+    //       },
+    //     ],
+    //   },
+    // },
     `gatsby-plugin-styled-components`,
     {
       resolve: 'gatsby-plugin-sass',
