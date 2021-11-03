@@ -70,8 +70,8 @@ class Contact extends Component {
               </div>
             </form>
             <h1>Booking and Press Inquiries</h1>
-            <a href="mailto:danandthewildfire@gmail.com" className="booking">
-              Email danandthewildfire@gmail.com
+            <a href="mailto:booking@danandthewildfire.com" className="booking">
+              Email booking@danandthewildfire.com
             </a>
           </div>
           <div className="social-icons">
